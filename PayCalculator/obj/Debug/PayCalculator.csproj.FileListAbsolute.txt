@@ -1,0 +1,6 @@
+c:\users\gcode_000\documents\visual studio 2015\Projects\PayCalculator\PayCalculator\bin\Debug\PayCalculator.exe.config
+c:\users\gcode_000\documents\visual studio 2015\Projects\PayCalculator\PayCalculator\bin\Debug\PayCalculator.exe
+c:\users\gcode_000\documents\visual studio 2015\Projects\PayCalculator\PayCalculator\bin\Debug\PayCalculator.pdb
+c:\users\gcode_000\documents\visual studio 2015\Projects\PayCalculator\PayCalculator\obj\Debug\PayCalculator.csprojResolveAssemblyReference.cache
+c:\users\gcode_000\documents\visual studio 2015\Projects\PayCalculator\PayCalculator\obj\Debug\PayCalculator.exe
+c:\users\gcode_000\documents\visual studio 2015\Projects\PayCalculator\PayCalculator\obj\Debug\PayCalculator.pdb
