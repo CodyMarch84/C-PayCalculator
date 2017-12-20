@@ -39,8 +39,8 @@ namespace PayCalculator
     }*/
     public class PayCalculator
     {
-        private string hoursWorked;
-        private string payRate;
+        private float hoursWorked;
+        private float payRate;
         private float paycheck;
 
         private void CalculatePay()
@@ -48,39 +48,41 @@ namespace PayCalculator
             
         }
 
-        public string GetUserHours()
+        public void GetUserHours()
         {
             Console.WriteLine("Enter hours worked this week: ");
-                hoursWorked = Console.ReadLine();
-            return hoursWorked;
+            hoursWorked = float.Parse(Console.ReadLine());
         }
 
-        public string GetUserRate()
+        public void GetUserRate()
         {
             Console.WriteLine("Enter hourly rate: ");
-            payRate = Console.ReadLine();
-            return payRate;
+            payRate = float.Parse(Console.ReadLine());
         }
 
-        public float GetOverTimeHours(float hours, float rate)
+        public void RunPayCalculator(/*float hours, float rate*/)
         {
             float standardWeek = 40;
             float overTimeRate = 1.5f;
-            float paycheck = 0;
 
-            if (hours > standardWeek)
+            GetUserHours();
+            GetUserRate();
+
+            if (hoursWorked > standardWeek)
             {
-                float overTimeHours = hours - standardWeek;
-                float regPay = standardWeek * rate;
-                float overTimePay = rate * overTimeRate * overTimeHours;
+                float overTimeHours = hoursWorked - standardWeek;
+                float regPay = standardWeek * payRate;
+                float overTimePay = payRate * overTimeRate * overTimeHours;
                 paycheck = overTimePay + regPay;
             }
             else
             {
-                paycheck = hours * rate;
+                paycheck = hoursWorked * payRate;
             }
-            return paycheck;
+            DisplayPay();
         }
+
+
 
         public float DisplayPay()
         {
